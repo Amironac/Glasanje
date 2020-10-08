@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json",
+    "application": "nodemon app.js",
+    "start": "concurrently \"npm run json:server\" \"npm run application\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json-server": "^0.16.2",
+    "mongoose": "^5.9.10",
+    "pusher": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

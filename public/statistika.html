@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    
+    
+    <style>
+        body{
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid" >
+        <div class="row">
+          <nav class="col-md-2 d-none pt-5 d-md-block fixed-top sidebar" >
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" id="anch" href="/">
+                    <span data-feather="home"></span>
+                    Platforma <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/statistika">
+                    <!-- <span data-feather="file"></span> -->
+                    Statistika
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/proizvodi">
+                    <span data-feather="shopping-cart"></span>
+                    Proizvodi
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="/kupci">
+                    <span data-feather="users"></span>
+                    Kupci
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="/izvjestaj">
+                    <span data-feather="bar-chart-2"></span>
+                    Izvjestaj
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="/prodaja">
+                    <span data-feather="layers"></span>
+                    Prodaja
+                  </a>
+                </li>
+              </ul>
+      
+              
+              <!-- <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="#">
+                    <span data-feather="file-text"></span>
+                    Current month
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="#">
+                    <span data-feather="file-text"></span>
+                    Last quarter
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="#">
+                    <span data-feather="file-text"></span>
+                    Social engagement
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="#">
+                    <span data-feather="file-text"></span>
+                    Year-end sale
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"id="anch" href="/logout">
+                    <span data-feather="file-text"></span>
+                    Odjavi se
+                  </a>
+                </li>
+              </ul> -->
+            </div>
+          </nav>
+          <div id="sat">
+            <time id="time" style="font-size:20px;">12:17:04 </time>
+            <span id="ampm"></span>
+          </div>
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="main">
+            
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                
+                <h1 class="h2">Statistika</h1>
+              
+              <div class="btn-toolbar mb-2 mb-md-0">
+                
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  
+                  Promijeni izgled krivulje
+                </button>
+              </div>
+            
+            </div>
+
+            <form id="vote-form" style="display: none;">
+              <input type="submit">
+            </form>
+            <div id="chartContainer" style="height:500px; width:100%"></div>
+
+            
+      
+          
+          </main>
+        </div>
+      </div>
+      <!-- <script src="JS/sat.js"></script> -->
+      
+      <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+      
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script src="JS/vote.js"></script>
+      <script src="JS/sat.js"></script>
+      
+</body>
+</html>

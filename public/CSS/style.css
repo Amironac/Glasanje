@@ -1,0 +1,18 @@
+body {
+    color: rgb(100, 100, 100);
+}
+
+#thead {
+    color: rgb(100, 100, 100);
+}
+
+#tbody {
+    color: rgb(100, 100, 100);
+}
+#sat{
+    position: absolute;
+    top:3.3%;
+    left:50%;
+    z-index:2;
+    margin: auto;
+}

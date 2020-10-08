@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/glasanje.css">
+    <style>
+        body{
+            overflow-y: hidden;
+        }
+        @media (max-width: 700px) {
+            body{
+                height:100vh;
+            }
+            .col-sm-3{
+                width:400px;
+            }
+            .col-sm-3 .h1{
+                font-size: 40px;
+                font-weight: 500;
+                color:white;
+            }
+            .img{
+                width: 100px;
+                height:100px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+     <div class="podloga">
+        
+        <div class="container ">
+        <form id="vote-form">
+            <h2 class="h1 text-danger">Ocijenite Vaseg najdrazeg frizera</h2>
+            <div class="row">
+                <div class=" col-sm-3 ">
+                    
+                    <img src="CSS/lamija.jpg"class="img" alt="">
+                    
+                    <h1 class="display-4 h1"> Lamija </h1>
+                    <img src="https://img.icons8.com/carbon-copy/60/000000/comb.png"/>
+                    <label for="Lamija">
+                        <input type="radio" name="os"  id="Lamija" class="option-input radio"
+                        value="Lamija" checked />
+                        
+                    </label>
+                </div>
+                <div class=" col-sm-3 ">
+                    <img src="CSS/Medina.jpg" class="img" alt="">
+                    <h1 class="display-4 h1"> Medina </h1>
+                    <img src="https://img.icons8.com/carbon-copy/60/000000/hair-dryer.png"/>
+                    <label for="Medina">
+                    <input type="radio" id="Medina" class="option-input radio" name="os"
+                    value="Medina" />
+                
+                </label>
+                </div>
+                <div class=" col-sm-3">
+                    <img src="CSS/Alem.jpg"class="img" alt="">
+                    <h1 class="display-4 h1"> Alem </h1>
+                    <img src="https://img.icons8.com/carbon-copy/60/000000/barber-chair.png"/>
+                    <label for="Alen">
+                        <input type="radio" id="Alen" class="option-input radio" name="os" 
+                        value="Alen"/>
+                    
+                    </label>
+                </div>
+                <div class=" col-sm-3">
+                    <img src="CSS/Mirza.jpg"class="img" alt="">
+                        <h1 class="display-4 h1"> Mirza </h1>
+                        <img src="https://img.icons8.com/carbon-copy/60/000000/barber-scissors.png"/>
+                    <label for="Mirza">
+                        <input type="radio" id="Mirza" class="option-input radio" name="os"
+                        value="Mirza" />
+                    
+                    </label>
+                    </div>
+             
+            </div>
+                <button type="submit" id="submit" class="btn">
+                    <div>
+                        <img src="https://img.icons8.com/bubbles/150/000000/barbershop.png"/>
+                    </div>
+                </button>
+        </form>
+    </div>
+    <h1 class="display-5 h1 text-light" style="font-weight: 600;">Kod koga ste danas bili na usluzi ?</h1>
+</div>
+</div>
+    
+        <br><br>
+
+        <div id="chartContainer" style="height:300px; width:100%; display: none;"></div>
+        
+        <audio id="play" src="./CSS/tap.mp3"></audio>
+
+  
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/5.0.2/pusher.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="JS/vote.js"></script>
+    <script>
+        
+        var but = document.getElementById("submit");
+        but.addEventListener("click", play);
+
+        function play() {
+            document.getElementById("play").play();
+        }
+    </script>
+
+</body>
+</html>
